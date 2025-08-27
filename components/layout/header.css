@@ -1,13 +1,147 @@
-.news-container {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+        url("/images/header-image.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo .unread-logo {
+    max-width: 100%;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.header-search-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.header-input:focus {
+    outline: none;
+}
+
+.search-button {
+    filter: grayscale(100%) brightness(75%);
+    width: 100%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.next-article {
+    font-size: 12px;
+}
+
+.next-article-category {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-left: 5px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.symbols {
+    color: blue;
+    font-size: 1.26rem;
+    animation: fadein 1.5s linear infinite;
+}
+
+@keyframes fadein {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.app-icons a {
+    opacity: 0.5;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.facebook-icon:hover {
+    color: #1877f2;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.instagram-icon:hover {
+    background: radial-gradient(circle at 30% 100%,
+            #fdf497 0%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%);
+    border-radius: 2px;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.twitter-icon:hover {
+    color: #1da1f2;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.linkedin-icon:hover {
+    color: #0a66c2;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.main-header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.6) 100%),
         url("/images/hero-image.jpg");
-    background-size: cover; */
     height: 100vh;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 40px;
-    max-width: 100%;
     background-size: cover;
     background-position: center;
 }
